@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fantail Services — Growth Strategy 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0d0d0d;--s1:#161616;--s2:#1e1e1e;--s3:#2a2a2a;
+  --br:rgba(255,255,255,0.09);--brl:rgba(255,255,255,0.16);
+  --t1:#f2efe9;--t2:#c4beb6;--t3:#7a7570;
+  --or:#E8622F;--ord:rgba(232,98,47,0.1);--orb:rgba(232,98,47,0.28);
+  --bl:#4A8FE8;--bld:rgba(74,143,232,0.1);--blb:rgba(74,143,232,0.28);
+  --gr:#3DAF76;--grd:rgba(61,175,118,0.1);--grb:rgba(61,175,118,0.28);
+  --red:#E05252;
+  --f-serif:'Fraunces',Georgia,serif;
+  --f-sans:'Plus Jakarta Sans',system-ui,sans-serif;
+  --f-mono:'JetBrains Mono',monospace;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--t1);font-family:var(--f-sans);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,13,13,0.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--br);padding:0 2.5rem;height:54px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--f-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--t3)}
+.nav-links{display:flex;gap:1.75rem;list-style:none}
+.nav-links a{font-family:var(--f-sans);font-size:12px;font-weight:500;color:var(--t3);text-decoration:none;transition:color 0.2s;letter-spacing:0.01em}
+.nav-links a:hover{color:var(--t1)}
+
+/* LAYOUT */
+.pg{max-width:1080px;margin:0 auto;padding:0 2.5rem}
+section{padding:6rem 0}
+hr{border:none;border-top:1px solid var(--br)}
+
+/* TYPE */
+.eyebrow{font-family:var(--f-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--t3);margin-bottom:1rem;display:flex;align-items:center;gap:0.75rem}
+.eyebrow::before{content:'';width:20px;height:1px;background:var(--t3);display:inline-block;flex-shrink:0}
+h1{font-family:var(--f-serif);font-size:clamp(48px,7vw,88px);font-weight:300;line-height:1.02;letter-spacing:-0.02em;color:var(--t1);margin-bottom:1.25rem}
+h1 em{font-style:italic;color:var(--t2)}
+h2{font-family:var(--f-serif);font-size:clamp(28px,3.8vw,44px);font-weight:300;line-height:1.12;letter-spacing:-0.01em;color:var(--t1);margin-bottom:0.8rem}
+h3{font-family:var(--f-serif);font-size:clamp(24px,3vw,36px);font-weight:300;line-height:1.15;color:var(--t1);margin-bottom:0.75rem}
+p{color:var(--t2);line-height:1.82;font-size:15px}
+.lead{font-size:18px;color:var(--t2);max-width:660px;line-height:1.82}
+
+/* HERO */
+.hero{padding:130px 0 80px}
+.hero-meta{display:flex;gap:2.5rem;flex-wrap:wrap;margin-top:2.5rem;padding-top:2.5rem;border-top:1px solid var(--br)}
+.mi{display:flex;flex-direction:column;gap:5px}
+.mi-label{font-family:var(--f-mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--t3)}
+.mi-val{font-size:14px;color:var(--t2)}
+
+/* INSIGHT */
+.insight{background:var(--ord);border:1px solid var(--orb);border-radius:10px;padding:1.5rem 1.75rem;margin:2.5rem 0;font-size:15px;color:var(--t1);line-height:1.8}
+.insight strong{color:var(--or);font-weight:600}
+
+/* CARD */
+.card{background:var(--s1);border:1px solid var(--br);border-radius:12px;overflow:hidden;margin:2.5rem 0}
+.card-hd{padding:1rem 1.5rem;border-bottom:1px solid var(--br);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem}
+.card-lbl{font-family:var(--f-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--t3)}
+
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--br);border:1px solid var(--br);border-radius:12px;overflow:hidden;margin:2.5rem 0}
+.stat{background:var(--s1);padding:1.75rem 1.5rem}
+.stat-n{font-family:var(--f-serif);font-size:44px;font-weight:300;line-height:1;color:var(--t1);margin-bottom:6px;letter-spacing:-0.02em}
+.stat-d{font-size:14px;color:var(--t2);line-height:1.6;margin-bottom:10px}
+.stat-note{font-family:var(--f-mono);font-size:9px;letter-spacing:0.06em;color:var(--t3);text-transform:uppercase}
+
+/* SEASON BARS */
+.bars-row{display:flex;align-items:flex-end;gap:8px;height:140px;margin-bottom:0.75rem}
+.b-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;height:100%;justify-content:flex-end}
+.b-fill{width:100%;border-radius:4px 4px 0 0}
+.b-fill.peak{background:var(--or)}
+.b-fill.high{background:rgba(232,98,47,0.6)}
+.b-fill.mid{background:rgba(232,98,47,0.35)}
+.b-fill.low{background:rgba(232,98,47,0.18)}
+.b-fill.now{outline:2px dashed rgba(232,98,47,0.6);outline-offset:2px}
+.b-mo{font-family:var(--f-mono);font-size:9px;text-transform:uppercase;letter-spacing:0.06em;color:var(--t3)}
+.b-mo.active{color:var(--or);font-weight:500}
+.bars-leg{border-top:1px solid var(--br);padding-top:1rem;display:flex;gap:1.5rem;flex-wrap:wrap}
+.leg-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--t3)}
+.leg-dot{width:8px;height:8px;border-radius:2px;flex-shrink:0}
+
+/* BUYER SPLIT */
+.buyer-split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--br);border:1px solid var(--br);border-radius:12px;overflow:hidden;margin:2.5rem 0}
+.bs{background:var(--s1);padding:2rem}
+.bs.b2b{background:var(--s2)}
+.btag{display:inline-flex;align-items:center;padding:4px 12px;border-radius:20px;font-family:var(--f-mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.25rem}
+.btag-r{background:var(--ord);border:1px solid var(--orb);color:var(--or)}
+.btag-c{background:var(--bld);border:1px solid var(--blb);color:var(--bl)}
+.bname{font-family:var(--f-serif);font-size:24px;font-weight:300;margin-bottom:6px;color:var(--t1)}
+.bdesc{font-size:14px;color:var(--t2);line-height:1.75;margin-bottom:1.5rem}
+.jstep{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--br);align-items:flex-start}
+.jstep:last-child{border-bottom:none}
+.jdot{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--f-mono);font-size:9px;margin-top:1px}
+.dot-o{background:var(--ord);border:1px solid var(--orb);color:var(--or)}
+.dot-b{background:var(--bld);border:1px solid var(--blb);color:var(--bl)}
+.jt{font-size:14px;font-weight:600;color:var(--t1);margin-bottom:3px}
+.jd{font-size:13px;color:var(--t2);line-height:1.65}
+.jch{font-family:var(--f-mono);font-size:9px;letter-spacing:0.08em;text-transform:uppercase;color:var(--t3);margin-top:5px}
+
+/* CHANNELS */
+.chs{display:flex;flex-direction:column;gap:1px;background:var(--br);border:1px solid var(--br);border-radius:12px;overflow:hidden;margin:2.5rem 0}
+.ch{background:var(--s1);display:grid;grid-template-columns:200px 1fr 200px}
+.ch.alt{background:var(--s2)}
+.ch-a,.ch-b,.ch-c{padding:1.75rem}
+.ch-a{border-right:1px solid var(--br)}
+.ch-b{border-right:1px solid var(--br)}
+.ch-n{font-family:var(--f-mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--t3);margin-bottom:8px}
+.ch-name{font-size:16px;font-weight:600;color:var(--t1);margin-bottom:4px}
+.ch-sub{font-size:12px;color:var(--t2);line-height:1.55;margin-bottom:10px}
+.ch-tags{display:flex;gap:4px;flex-wrap:wrap}
+.ctag{padding:3px 8px;border-radius:4px;font-family:var(--f-mono);font-size:9px;letter-spacing:0.08em;text-transform:uppercase}
+.ctag-r{background:var(--ord);border:1px solid var(--orb);color:var(--or)}
+.ctag-c{background:var(--bld);border:1px solid var(--blb);color:var(--bl)}
+.ch-body{font-size:14px;color:var(--t2);line-height:1.82;margin-bottom:1.25rem}
+.ch-pts{display:flex;flex-direction:column;gap:7px}
+.ch-pt{display:flex;gap:8px;align-items:flex-start}
+.ch-pt::before{content:'→';color:var(--or);font-size:11px;margin-top:4px;flex-shrink:0}
+.ch-pt span{font-size:13px;color:var(--t2);line-height:1.65}
+.ch-stat{background:var(--s2);border:1px solid var(--br);border-radius:8px;padding:12px 14px;margin-bottom:8px}
+.ch-stat:last-child{margin-bottom:0}
+.ch-sv{font-family:var(--f-serif);font-size:24px;font-weight:300;color:var(--t1);line-height:1;margin-bottom:3px;letter-spacing:-0.01em}
+.ch-sl{font-size:12px;color:var(--t2);line-height:1.5}
+
+/* ROI */
+.roi-grid{display:grid;grid-template-columns:1fr 1fr}
+.roi-l{padding:2rem;border-right:1px solid var(--br)}
+.roi-r{padding:2rem}
+.sg{margin-bottom:1.5rem}
+.sg-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
+.sg-name{font-size:14px;font-weight:500;color:var(--t1)}
+.sg-val{font-family:var(--f-mono);font-size:13px;color:var(--or)}
+input[type=range]{width:100%;-webkit-appearance:none;height:3px;background:var(--s3);border-radius:3px;outline:none;cursor:pointer}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--or);cursor:pointer;box-shadow:0 0 0 3px rgba(232,98,47,0.2)}
+.roi-line{display:flex;justify-content:space-between;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--br)}
+.roi-line:last-of-type{border-bottom:none}
+.roi-ll{font-size:14px;color:var(--t2)}
+.roi-lv{font-family:var(--f-serif);font-size:22px;font-weight:300;letter-spacing:-0.01em}
+.roi-lv.neg{color:var(--red)}
+.roi-lv.pos{color:var(--gr)}
+.roi-lv.big{font-size:38px}
+.roi-verd{margin-top:1.25rem;padding:1.25rem;border-radius:8px;font-size:14px;line-height:1.7}
+.verd-ok{background:var(--grd);border:1px solid var(--grb);color:#5ecf98}
+.verd-bad{background:rgba(224,82,82,0.1);border:1px solid rgba(224,82,82,0.25);color:#e88888}
+
+/* SUPPORT */
+.sup-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--br);border:1px solid var(--br);border-radius:12px;overflow:hidden;margin:2.5rem 0}
+.sup{background:var(--s1);padding:2rem}
+.sup-ico{font-size:22px;margin-bottom:1rem}
+.sup-name{font-size:15px;font-weight:600;color:var(--t1);margin-bottom:8px}
+.sup-desc{font-size:14px;color:var(--t2);line-height:1.78;margin-bottom:1.25rem}
+.sup-list{display:flex;flex-direction:column;gap:8px}
+.si{display:flex;gap:8px;align-items:flex-start}
+.si::before{content:'→';color:var(--or);font-size:11px;margin-top:4px;flex-shrink:0}
+.si span{font-size:13px;color:var(--t2);line-height:1.65}
+
+/* 90 DAY */
+.ninety{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--br)}
+.mc{background:var(--s1);padding:1.75rem}
+.mc-tag{font-family:var(--f-mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--t3);margin-bottom:5px}
+.mc-title{font-family:var(--f-serif);font-size:22px;font-weight:300;color:var(--t1);margin-bottom:1.25rem}
+.mc-tasks{display:flex;flex-direction:column;gap:8px;margin-bottom:1.25rem}
+.mt{font-size:13px;color:var(--t2);line-height:1.65;padding:10px 12px;background:var(--s2);border-radius:6px;border-left:2px solid var(--brl)}
+.mt.to{border-left-color:var(--or)}
+.mt.tb{border-left-color:var(--bl)}
+.mt.tg{border-left-color:var(--gr)}
+.mc-out{padding:12px 14px;background:var(--ord);border:1px solid var(--orb);border-radius:8px;font-size:12px;color:var(--t1);line-height:1.6}
+.mc-out strong{color:var(--or)}
+
+/* TRACKS */
+.track-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:2.5rem 0}
+.tc{background:var(--s1);border:1px solid var(--br);border-radius:12px;padding:1.75rem;position:relative;opacity:0.45;transition:opacity 0.2s}
+.tc:hover{opacity:1}
+.tc.rec{opacity:1;border-color:var(--or)}
+.rec-pill{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--or);color:#fff;font-family:var(--f-mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;padding:3px 12px;border-radius:20px;white-space:nowrap}
+.tc-tier{font-family:var(--f-mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--t3);margin-bottom:8px}
+.tc-price{font-family:var(--f-serif);font-size:38px;font-weight:300;color:var(--t1);line-height:1;letter-spacing:-0.02em;margin-bottom:2px}
+.tc-per{font-size:12px;color:var(--t3);margin-bottom:1.5rem}
+.tc-list{display:flex;flex-direction:column;gap:7px;margin-bottom:1.5rem}
+.ti{font-size:12px;color:var(--t2);display:flex;gap:8px;align-items:flex-start;line-height:1.45}
+.ti-y{color:var(--gr);flex-shrink:0;font-size:13px}
+.ti-n{color:var(--t3);flex-shrink:0;font-size:13px}
+.tc-note{font-size:12px;padding:10px 12px;border-radius:6px;line-height:1.55}
+.tn-w{background:rgba(212,150,15,0.1);border:1px solid rgba(212,150,15,0.2);color:#c4a040}
+.tn-g{background:var(--grd);border:1px solid var(--grb);color:#5ecf98}
+.tn-l{background:var(--s2);border:1px solid var(--br);color:var(--t3)}
+
+/* PATHS */
+.paths{display:flex;flex-direction:column;gap:1px;background:var(--br);border:1px solid var(--br);border-radius:12px;overflow:hidden;margin:2.5rem 0}
+.path{background:var(--s1);display:grid;grid-template-columns:220px 1fr 220px}
+.path.alt{background:var(--s2)}
+.pa,.pb,.pc{padding:1.75rem}
+.pa{border-right:1px solid var(--br)}
+.pb{border-right:1px solid var(--br)}
+.p-tag{font-family:var(--f-mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--t3);margin-bottom:8px}
+.p-name{font-family:var(--f-serif);font-size:20px;font-weight:300;color:var(--t1);margin-bottom:6px}
+.p-trig{font-size:12px;color:var(--t2);line-height:1.55;margin-bottom:12px}
+.ppill{display:inline-block;padding:4px 10px;border-radius:4px;font-family:var(--f-mono);font-size:9px;letter-spacing:0.08em;text-transform:uppercase}
+.p-body{font-size:13px;color:var(--t2);line-height:1.75;margin-bottom:1rem}
+
+/* SCENARIOS */
+.scens{display:flex;flex-direction:column;gap:14px;margin:2.5rem 0}
+.scen{border:1px solid var(--br);border-radius:12px;overflow:hidden;background:var(--s1)}
+.scen-g{display:grid;grid-template-columns:260px 1fr}
+.sc-l{padding:1.75rem;border-right:1px solid var(--br);background:var(--s2)}
+.sc-r{padding:1.75rem}
+.sc-num{font-family:var(--f-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--t3);margin-bottom:8px}
+.sc-title{font-size:15px;font-weight:600;color:var(--t1);margin-bottom:8px;line-height:1.4}
+.sc-trig{font-size:12px;color:var(--t2);line-height:1.55;margin-bottom:14px}
+.scpill{display:inline-block;padding:4px 10px;border-radius:4px;font-family:var(--f-mono);font-size:9px;letter-spacing:0.08em;text-transform:uppercase}
+.sc-body{font-size:14px;color:var(--t2);line-height:1.82;margin-bottom:1.25rem}
+.sc-cols{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.scbox{background:var(--s1);border:1px solid var(--br);border-radius:8px;padding:16px}
+.scbox-t{font-family:var(--f-mono);font-size:9px;text-transform:uppercase;letter-spacing:0.1em;color:var(--or);margin-bottom:8px}
+.scbox p{font-size:13px;color:var(--t2);line-height:1.72}
+
+/* CLOSE */
+.close-wrap{background:var(--s1);border-top:1px solid var(--br)}
+.close-inner{max-width:1080px;margin:0 auto;padding:6rem 2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.close-body{font-size:15px;color:var(--t2);line-height:1.85}
+.contact{margin-top:2.5rem;padding-top:2.5rem;border-top:1px solid var(--br)}
+.contact-name{font-size:15px;font-weight:600;color:var(--t1);margin-bottom:5px}
+.contact-info{font-family:var(--f-mono);font-size:11px;letter-spacing:0.06em;color:var(--t3);line-height:2.2}
+.nsteps{display:flex;flex-direction:column;gap:1px;background:var(--br);border:1px solid var(--br);border-radius:12px;overflow:hidden}
+.ns{background:var(--s1);padding:1.25rem 1.5rem;display:flex;gap:1.25rem;align-items:flex-start}
+.ns-num{font-family:var(--f-mono);font-size:10px;letter-spacing:0.1em;color:var(--or);flex-shrink:0;margin-top:3px}
+.ns-title{font-size:14px;font-weight:600;color:var(--t1);margin-bottom:3px}
+.ns-detail{font-size:12px;color:var(--t2);line-height:1.6}
+.foot{max-width:1080px;margin:0 auto;padding:1.5rem 2.5rem;display:flex;justify-content:space-between;border-top:1px solid var(--br)}
+.foot span{font-family:var(--f-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--t3)}
+
+@media(max-width:820px){
+  .buyer-split,.roi-grid,.ninety,.track-grid,.sup-grid,.close-inner{grid-template-columns:1fr}
+  .ch,.path,.scen-g{grid-template-columns:1fr}
+  .ch-a,.ch-b,.pa,.pb,.sc-l{border-right:none;border-bottom:1px solid var(--br)}
+  .nav-links{display:none}
+  h1{font-size:44px}
+  .stats{grid-template-columns:1fr 1fr}
+  .sc-cols{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Empora × Fantail 2026</div>
+  <ul class="nav-links">
+    <li><a href="#market">Market</a></li>
+    <li><a href="#buyers">Buyers</a></li>
+    <li><a href="#system">System</a></li>
+    <li><a href="#channels">Channels</a></li>
+    <li><a href="#roi">ROI</a></li>
+    <li><a href="#support">Supporting</a></li>
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#scaling">Scaling</a></li>
+    <li><a href="#scenarios">Scenarios</a></li>
+    <li><a href="#close">Next Steps</a></li>
+  </ul>
+</nav>
+
+<div class="pg">
+<div class="hero">
+  <div class="eyebrow">Growth Strategy — April 2026 — Confidential</div>
+  <h1>The Wellington<br><em>Winter Machine.</em></h1>
+  <p class="lead">A full-system digital marketing strategy for Fantail Services. How Google, Meta, LinkedIn, and a rebuilt website interlock to capture Wellington HVAC demand — residential and commercial — before the April–June peak.</p>
+  <div class="hero-meta">
+    <div class="mi"><div class="mi-label">Prepared for</div><div class="mi-val">Chris Spayes, Fantail Services Ltd</div></div>
+    <div class="mi"><div class="mi-label">Prepared by</div><div class="mi-val">Logan James Hempel, Empora Media</div></div>
+    <div class="mi"><div class="mi-label">Recommended track</div><div class="mi-val">Track 1+2 — $2,000/month</div></div>
+    <div class="mi"><div class="mi-label">Target go-live</div><div class="mi-val">April 2026</div></div>
+  </div>
+</div>
+</div>
+
+<hr>
+
+<!-- 01 MARKET -->
+<div class="pg"><section id="market">
+  <div class="eyebrow">01 — Market Reality</div>
+  <h2>Wellington HVAC demand is seasonal, concentrated, and winnable right now.</h2>
+  <p class="lead" style="margin-bottom:2.5rem">The market has a predictable annual pattern. Enquiries spike sharply April through June. Campaigns live and optimised before that window opens capture the bulk of intent. Campaigns launched during the peak are still in learning phase.</p>
+
+  <div class="card">
+    <div class="card-hd">
+      <span class="card-lbl">Wellington HVAC Search Demand — Monthly Index</span>
+      <span style="font-family:var(--f-mono);font-size:9px;color:var(--or);letter-spacing:0.1em;text-transform:uppercase">▲ You are here — April 2026</span>
+    </div>
+    <div style="padding:1.75rem">
+      <div class="bars-row">
+        <div class="b-col"><div class="b-fill low" style="height:28%"></div><div class="b-mo">Jan</div></div>
+        <div class="b-col"><div class="b-fill low" style="height:22%"></div><div class="b-mo">Feb</div></div>
+        <div class="b-col"><div class="b-fill mid" style="height:40%"></div><div class="b-mo">Mar</div></div>
+        <div class="b-col"><div class="b-fill high now" style="height:64%"></div><div class="b-mo active">Apr ◄</div></div>
+        <div class="b-col"><div class="b-fill peak" style="height:90%"></div><div class="b-mo">May</div></div>
+        <div class="b-col"><div class="b-fill peak" style="height:100%"></div><div class="b-mo">Jun</div></div>
+        <div class="b-col"><div class="b-fill high" style="height:72%"></div><div class="b-mo">Jul</div></div>
+        <div class="b-col"><div class="b-fill mid" style="height:50%"></div><div class="b-mo">Aug</div></div>
+        <div class="b-col"><div class="b-fill mid" style="height:38%"></div><div class="b-mo">Sep</div></div>
+        <div class="b-col"><div class="b-fill low" style="height:26%"></div><div class="b-mo">Oct</div></div>
+        <div class="b-col"><div class="b-fill low" style="height:20%"></div><div class="b-mo">Nov</div></div>
+        <div class="b-col"><div class="b-fill low" style="height:18%"></div><div class="b-mo">Dec</div></div>
+      </div>
+      <div class="bars-leg">
+        <div class="leg-item"><div class="leg-dot" style="background:var(--or)"></div>Peak demand</div>
+        <div class="leg-item"><div class="leg-dot" style="background:rgba(232,98,47,0.6)"></div>High</div>
+        <div class="leg-item"><div class="leg-dot" style="background:rgba(232,98,47,0.35)"></div>Moderate</div>
+        <div class="leg-item"><div class="leg-dot" style="background:rgba(232,98,47,0.18)"></div>Low season</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="insight"><strong>Why this timing is critical:</strong> Google Ads campaigns need 2–4 weeks to exit the learning phase and reach efficient cost-per-click. A campaign launched in April is optimised before Wellington's peak in May–June. A campaign launched in May is still learning — spending at inflated CPCs while competitors who launched earlier capture the best enquiries at lower cost. Every week of delay has a direct, measurable cost.</div>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-n">6+</div><div class="stat-d">Active Wellington HVAC competitors with an established digital presence</div><div class="stat-note">Wasabi Air · Goldstar · Imperial HVAC · Ignite · Abode Air · BA Heat Pumps</div></div>
+    <div class="stat"><div class="stat-n">0</div><div class="stat-d">Retargeting campaigns currently active for Fantail site visitors</div><div class="stat-note">Every visitor who leaves sees competitor ads instead</div></div>
+    <div class="stat"><div class="stat-n">6.02×</div><div class="stat-d">ROAS achieved on comparable NZ service-sector Google campaigns</div><div class="stat-note">Empora Media client data — 8 months tracking</div></div>
+    <div class="stat"><div class="stat-n">$0.97</div><div class="stat-d">Average cost-per-click across 931 tracked conversions</div><div class="stat-note">Service sector, NZ market, search campaigns</div></div>
+  </div>
+</section></div>
+
+<hr>
+
+<!-- 02 BUYERS -->
+<div class="pg"><section id="buyers">
+  <div class="eyebrow">02 — The Two Buyers</div>
+  <h2>Fantail has two completely different customers. One homepage cannot serve both.</h2>
+  <p class="lead" style="margin-bottom:2.5rem">The homeowner and the facility manager think, search, and decide in entirely different ways. The system runs completely separate funnels for each — because a page built for one will always underperform for the other.</p>
+
+  <div class="buyer-split">
+    <div class="bs">
+      <div class="btag btag-r">Residential buyer</div>
+      <div class="bname">The Wellington Homeowner</div>
+      <div class="bdesc">Emotionally driven. Seasonal. Responds to comfort, urgency, and price clarity. Decides within days of feeling the cold. Searches on mobile. Calls within hours of finding someone they trust.</div>
+      <div class="jstep"><div class="jdot dot-o">1</div><div><div class="jt">Feels the cold — awareness trigger</div><div class="jd">Temperature drops in March–April. Realises they're underheated or the unit is struggling.</div><div class="jch">Channel: Meta seasonal awareness ads</div></div></div>
+      <div class="jstep"><div class="jdot dot-o">2</div><div><div class="jt">Googles "heat pump install Wellington"</div><div class="jd">High purchase intent. Clicks the first credible result. Price ranges and a clear process matter immediately.</div><div class="jch">Channel: Google Search + residential landing page</div></div></div>
+      <div class="jstep"><div class="jdot dot-o">3</div><div><div class="jt">Leaves without enquiring — recoverable</div><div class="jd">Most first-visit traffic doesn't convert. Without retargeting they're gone. With it, Fantail follows them on Facebook and Instagram.</div><div class="jch">Channel: Meta retargeting loop</div></div></div>
+      <div class="jstep"><div class="jdot dot-o">4</div><div><div class="jt">Enquires → books → job done</div><div class="jd">Average residential install: $3,000–6,000. Decision cycle: 1–7 days. High volume, good margin.</div><div class="jch">Outcome: Residential revenue + Google reviews</div></div></div>
+    </div>
+    <div class="bs b2b">
+      <div class="btag btag-c">Commercial buyer</div>
+      <div class="bname">The Facility Manager</div>
+      <div class="bdesc">Rationally driven. Research-heavy. Evaluates multiple providers over weeks. Signs long-term contracts. Searches on desktop. Reads case studies, checks compliance credentials, compares response SLAs.</div>
+      <div class="jstep"><div class="jdot dot-b">1</div><div><div class="jt">Contract renewal or system failure — trigger</div><div class="jd">Existing provider underperforms or contract expires. A planned procurement process begins.</div><div class="jch">Channel: LinkedIn awareness — targeted by job title</div></div></div>
+      <div class="jstep"><div class="jdot dot-b">2</div><div><div class="jt">Researches Wellington HVAC providers</div><div class="jd">"Commercial HVAC maintenance Wellington" — lower volume, far higher value. Compares providers over days or weeks.</div><div class="jch">Channel: Google Search B2B campaign</div></div></div>
+      <div class="jstep"><div class="jdot dot-b">3</div><div><div class="jt">Evaluates Fantail specifically</div><div class="jd">Lands on commercial page. Needs: contract terms, compliance credentials, response SLA, multi-site capability. A generic homepage loses them.</div><div class="jch">Channel: Dedicated B2B landing page</div></div></div>
+      <div class="jstep"><div class="jdot dot-b">4</div><div><div class="jt">Signs contract → recurring revenue</div><div class="jd">Average commercial contract: $1,500–5,000+/month. Decision cycle: 2–8 weeks. One contract covers the retainer for over a year.</div><div class="jch">Outcome: Recurring B2B revenue + referrals</div></div></div>
+    </div>
+  </div>
+
+  <div class="insight"><strong>The homepage problem:</strong> A homeowner needs cost ranges, installation process, photos, and a clear call to action. A facility manager needs contract structures, compliance credentials, and case studies. One page trying to serve both converts neither. Separate pages per buyer is the single biggest lever on conversion rate from any traffic source — and the draft Fantail site already solves this.</div>
+</section></div>
+
+<hr>
+
+<!-- 03 SYSTEM -->
+<div class="pg"><section id="system">
+  <div class="eyebrow">03 — The System</div>
+  <h2>Five channels. Two funnels. One machine that compounds over time.</h2>
+  <p class="lead" style="margin-bottom:2.5rem">Each channel has a specific, non-interchangeable job. The critical insight: Meta and Google don't just add together — when both run simultaneously, Meta warms audiences that Google converts at lower cost. The compound effect is measurable.</p>
+
+  <div class="card">
+    <div class="card-hd"><span class="card-lbl">Full system architecture — how the five channels interlock</span></div>
+    <div style="padding:2rem">
+
+      <!-- Two funnel labels -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-bottom:1px">
+        <div style="background:rgba(232,98,47,0.06);border:1px solid rgba(232,98,47,0.2);border-radius:8px 8px 0 0;padding:10px 16px;text-align:center">
+          <span style="font-family:var(--f-mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--or)">Residential Funnel — Homeowners</span>
+        </div>
+        <div style="background:rgba(74,143,232,0.06);border:1px solid rgba(74,143,232,0.2);border-radius:8px 8px 0 0;padding:10px 16px;text-align:center">
+          <span style="font-family:var(--f-mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--bl)">Commercial Funnel — Facility Managers</span>
+        </div>
+      </div>
+
+      <!-- Step rows — 4 stages across both funnels -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--br)">
+
+        <!-- Stage 1 -->
+        <div style="background:var(--s2);padding:1.25rem 1.5rem;border-left:3px solid rgba(232,98,47,0.5)">
+          <div style="font-family:var(--f-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--or);margin-bottom:6px">Stage 1 — Demand Creation</div>
+          <div style="font-size:15px;font-weight:600;color:var(--t1);margin-bottom:4px">Meta Ads</div>
+          <div style="font-size:13px;color:var(--t2);line-height:1.65">Runs seasonal awareness ads to Wellington homeowners <em>before</em> they search. Builds Fantail familiarity so that when they do Google — they already recognise the name. Also runs the retargeting loop to recover visitors who didn't enquire.</div>
+        </div>
+        <div style="background:var(--s2);padding:1.25rem 1.5rem;border-left:3px solid rgba(74,143,232,0.5)">
+          <div style="font-family:var(--f-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--bl);margin-bottom:6px">Stage 1 — B2B Awareness</div>
+          <div style="font-size:15px;font-weight:600;color:var(--t1);margin-bottom:4px">LinkedIn Ads</div>
+          <div style="font-size:13px;color:var(--t2);line-height:1.65">Puts Fantail in front of Wellington facility managers — targeted by job title, company size, and industry — weeks before they start searching. Facility managers don't use Facebook. This is the only channel that reaches them in their professional context.</div>
+        </div>
+
+        <!-- Arrow row -->
+        <div style="background:var(--bg);padding:6px;text-align:center;font-size:18px;color:var(--t3)">↓</div>
+        <div style="background:var(--bg);padding:6px;text-align:center;font-size:18px;color:var(--t3)">↓</div>
+
+        <!-- Stage 2 -->
+        <div style="background:var(--s1);padding:1.25rem 1.5rem;border-left:3px solid rgba(232,98,47,0.5)">
+          <div style="font-family:var(--f-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--or);margin-bottom:6px">Stage 2 — Intent Capture</div>
+          <div style="font-size:15px;font-weight:600;color:var(--t1);margin-bottom:4px">Google Search — Residential</div>
+          <div style="font-size:13px;color:var(--t2);line-height:1.65">Catches homeowners searching "heat pump install Wellington" and similar. Because Meta pre-warmed these homeowners, they recognise Fantail → higher click-through rate → Google lowers the cost-per-click. Both channels running together is cheaper than Google alone.</div>
+        </div>
+        <div style="background:var(--s1);padding:1.25rem 1.5rem;border-left:3px solid rgba(74,143,232,0.5)">
+          <div style="font-family:var(--f-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--bl);margin-bottom:6px">Stage 2 — Intent Capture</div>
+          <div style="font-size:15px;font-weight:600;color:var(--t1);margin-bottom:4px">Google Search — Commercial</div>
+          <div style="font-size:13px;color:var(--t2);line-height:1.65">Catches facility managers searching "commercial HVAC Wellington" and "HVAC maintenance contract Wellington." Lower search volume than residential — but a single conversion is worth $18,000–60,000/year. LinkedIn pre-awareness makes Fantail familiar before they click.</div>
+        </div>
+
+        <!-- Arrow row -->
+        <div style="background:var(--bg);padding:6px;text-align:center;font-size:18px;color:var(--t3)">↓</div>
+        <div style="background:var(--bg);padding:6px;text-align:center;font-size:18px;color:var(--t3)">↓</div>
+
+        <!-- Stage 3 -->
+        <div style="background:var(--s2);padding:1.25rem 1.5rem;border-left:3px solid rgba(232,98,47,0.5)">
+          <div style="font-family:var(--f-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--or);margin-bottom:6px">Stage 3 — Conversion</div>
+          <div style="font-size:15px;font-weight:600;color:var(--t1);margin-bottom:4px">Residential Landing Page</div>
+          <div style="font-size:13px;color:var(--t2);line-height:1.65">A dedicated page for homeowners only. Cost ranges above the fold. Step-by-step installation process. Real Wellington job photos. Single clear CTA. This page converts at ~2× the rate of a generic homepage — which is why the draft Fantail site already has it built.</div>
+        </div>
+        <div style="background:var(--s2);padding:1.25rem 1.5rem;border-left:3px solid rgba(74,143,232,0.5)">
+          <div style="font-family:var(--f-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--bl);margin-bottom:6px">Stage 3 — Conversion</div>
+          <div style="font-size:15px;font-weight:600;color:var(--t1);margin-bottom:4px">Commercial Landing Page</div>
+          <div style="font-size:13px;color:var(--t2);line-height:1.65">A completely separate page for facility managers. Maintenance contract structures, response time SLAs, compliance certifications, multi-site capability, case studies. A homeowner page sent to a facility manager loses the conversion. Two pages is the fix.</div>
+        </div>
+
+        <!-- Arrow row -->
+        <div style="background:var(--bg);padding:6px;text-align:center;font-size:18px;color:var(--t3)">↓</div>
+        <div style="background:var(--bg);padding:6px;text-align:center;font-size:18px;color:var(--t3)">↓</div>
+
+        <!-- Stage 4 -->
+        <div style="background:rgba(61,175,118,0.06);padding:1.25rem 1.5rem;border-left:3px solid rgba(61,175,118,0.5)">
+          <div style="font-family:var(--f-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gr);margin-bottom:6px">Outcome — Residential</div>
+          <div style="font-size:15px;font-weight:600;color:var(--t1);margin-bottom:4px">Enquiry → Booked Job</div>
+          <div style="font-size:13px;color:var(--t2);line-height:1.65">Average residential install: <strong style="color:var(--t1)">$3,000–6,000</strong>. Decision cycle: 1–7 days. Every completed job feeds back into GBP reviews, which reduce the cost of future Google clicks. The flywheel builds.</div>
+        </div>
+        <div style="background:rgba(61,175,118,0.06);padding:1.25rem 1.5rem;border-left:3px solid rgba(61,175,118,0.5)">
+          <div style="font-family:var(--f-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gr);margin-bottom:6px">Outcome — Commercial</div>
+          <div style="font-size:15px;font-weight:600;color:var(--t1);margin-bottom:4px">Contract Signed → Recurring Revenue</div>
+          <div style="font-size:13px;color:var(--t2);line-height:1.65">Average contract: <strong style="color:var(--t1)">$1,500–5,000+/month</strong>. One contract at $2,000/month = $24,000/year — covering the full retainer from a single client. Decision cycle: 2–8 weeks. Requires the LinkedIn + commercial funnel in Track 1+2.</div>
+        </div>
+      </div>
+
+      <!-- Retargeting note -->
+      <div style="margin-top:1px;background:var(--s1);border:1px solid var(--br);border-radius:0 0 8px 8px;padding:12px 16px;display:flex;align-items:center;gap:12px">
+        <span style="font-size:18px;color:rgba(232,98,47,0.5)">↺</span>
+        <span style="font-size:13px;color:var(--t3);line-height:1.6"><strong style="color:var(--t2);font-weight:500">Retargeting loop (Stage 3 → Stage 1):</strong> Visitors who land on a page but leave without enquiring are retargeted on Meta for 30 days with a follow-up ad. Without this, every bounce is permanent lost spend. With it, 15–30% of those visitors return and convert.</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="insight"><strong>The compound effect:</strong> When Meta runs pre-season awareness ads, Wellington homeowners start seeing Fantail before they search. Weeks later on Google, they already recognise the name. Familiar brands get higher click-through rates — higher CTR means Google rewards you with lower cost-per-click. Meta makes Google cheaper. Running both simultaneously creates a compounding advantage that Track 1 alone leaves entirely on the table.</div>
+</section></div>
+
+<hr>
+
+<!-- 04 CHANNELS -->
+<div class="pg"><section id="channels">
+  <div class="eyebrow">04 — Channel Breakdown</div>
+  <h2>What each channel does, why it matters, and what it cannot do alone.</h2>
+  <p class="lead" style="margin-bottom:2.5rem">Every channel has a specific, non-interchangeable role. Understanding the mechanism behind each one separates a system that compounds from disconnected campaigns that produce inconsistent results.</p>
+
+  <div class="chs">
+    <div class="ch">
+      <div class="ch-a"><div class="ch-n">Channel 01</div><div class="ch-name">Google Search</div><div class="ch-sub">Active intent capture. The fastest path to enquiries in the system.</div><div class="ch-tags"><span class="ctag ctag-r">Residential</span><span class="ctag ctag-c">Commercial</span></div></div>
+      <div class="ch-b">
+        <p class="ch-body">People searching "heat pump install Wellington" are in purchase mode right now. Google puts Fantail at the top of those results before they find a competitor. It is the highest-converting channel in the system — but it can only capture demand that already exists. It cannot create demand in people who haven't started searching yet. That's Meta's job.</p>
+        <div class="ch-pts">
+          <div class="ch-pt"><span>Residential: heat pump install Wellington, EV charger installation, heat pump service + repair keywords — all separate campaigns with separate budgets</span></div>
+          <div class="ch-pt"><span>Commercial: commercial HVAC Wellington, HVAC maintenance contract, commercial heat pump Wellington, building HVAC services</span></div>
+          <div class="ch-pt"><span>Negative keyword lists built day one — eliminates DIY searches, out-of-region traffic, and competitor brand clicks that waste budget</span></div>
+          <div class="ch-pt"><span>Ad copy rotated seasonally — winter urgency messaging in March–May, servicing and maintenance focus in summer when install demand drops</span></div>
+        </div>
+      </div>
+      <div class="ch-c">
+        <div class="ch-stat"><div class="ch-sv">$0.97</div><div class="ch-sl">Avg CPC — comparable NZ service campaigns, 931 conversions tracked</div></div>
+        <div class="ch-stat"><div class="ch-sv">6.02×</div><div class="ch-sl">ROAS achieved — 8 months, service sector NZ</div></div>
+        <div class="ch-stat"><div class="ch-sv">48h</div><div class="ch-sl">Time to live once tracking is signed off and access is granted</div></div>
+      </div>
+    </div>
+
+    <div class="ch alt">
+      <div class="ch-a"><div class="ch-n">Channel 02</div><div class="ch-name">Meta Ads</div><div class="ch-sub">Pre-intent demand creation + retargeting loop. Makes Google cheaper.</div><div class="ch-tags"><span class="ctag ctag-r">Residential</span></div></div>
+      <div class="ch-b">
+        <p class="ch-body">Meta reaches Wellington homeowners before they know they need HVAC. This is demand creation — not demand capture. When someone sees "Is your home ready for Wellington winter?" and engages, they're primed. Weeks later on Google, Fantail is already familiar — higher CTR, lower CPC. The second job: retargeting. Every visitor who leaves without enquiring gets followed on Facebook and Instagram. Without this, you pay for the click and lose the visitor permanently.</p>
+        <div class="ch-pts">
+          <div class="ch-pt"><span>Pre-season creative (March–April): "Is your home ready for Wellington winter?" — targeted at Wellington homeowner demographics and interests</span></div>
+          <div class="ch-pt"><span>Real install photography — before/after heat pump jobs consistently outperform stock imagery in CTR. This is why photo access from day one matters.</span></div>
+          <div class="ch-pt"><span>Retargeting segments: all site visitors (30 days), specific page visitors, form abandoners — each gets a different message</span></div>
+          <div class="ch-pt"><span>Lookalike audiences built from enquiry data — Meta finds more Wellington homeowners who look like people who've already converted</span></div>
+        </div>
+      </div>
+      <div class="ch-c">
+        <div class="ch-stat"><div class="ch-sv">$300–500</div><div class="ch-sl">Monthly ad spend for consistent Wellington residential reach + retargeting active</div></div>
+        <div class="ch-stat"><div class="ch-sv">15–30%</div><div class="ch-sl">Bounce visitor recovery rate via retargeting — service sector industry benchmark</div></div>
+        <div class="ch-stat"><div class="ch-sv">Lower CPC</div><div class="ch-sl">Brand familiarity from Meta measurably reduces Google cost-per-click over time</div></div>
+      </div>
+    </div>
+
+    <div class="ch">
+      <div class="ch-a"><div class="ch-n">Channel 03</div><div class="ch-name">Conversion Pages</div><div class="ch-sub">Separate pages per buyer. The layer all traffic converts through.</div><div class="ch-tags"><span class="ctag ctag-r">Residential</span><span class="ctag ctag-c">Commercial</span></div></div>
+      <div class="ch-b">
+        <p class="ch-body">Traffic without the right page is traffic that leaves. A homeowner clicking a "heat pump install Wellington" ad needs cost ranges, installation process, real photos, and a clear CTA above the fold — on the first screen. A facility manager needs contract structures, compliance credentials, and response time guarantees. Two separate pages built specifically for each buyer is the single biggest lever on cost-per-enquiry from any traffic source. The draft Fantail site already separates these.</p>
+        <div class="ch-pts">
+          <div class="ch-pt"><span>Residential: price ranges visible above fold, step-by-step process (inspection → quote → install → aftercare), real Wellington install photography, one clear CTA</span></div>
+          <div class="ch-pt"><span>Commercial: maintenance plan structures, compliance and certification badges, response time guarantees, multi-site capability, B2B contact form</span></div>
+          <div class="ch-pt"><span>Mobile-first build — residential HVAC searches skew heavily mobile, especially evenings and commute hours when homeowners are browsing</span></div>
+          <div class="ch-pt"><span>Core Web Vitals compliance — fast load speed is a Google ranking factor and measurably reduces bounce rate from paid traffic</span></div>
+        </div>
+      </div>
+      <div class="ch-c">
+        <div class="ch-stat"><div class="ch-sv">~2×</div><div class="ch-sl">Typical CVR lift from dedicated landing page vs general homepage for HVAC</div></div>
+        <div class="ch-stat"><div class="ch-sv">Draft ready</div><div class="ch-sl">Proof-of-concept Fantail site already built — available to review on a call</div></div>
+      </div>
+    </div>
+
+    <div class="ch alt">
+      <div class="ch-a"><div class="ch-n">Channel 04</div><div class="ch-name">LinkedIn Ads</div><div class="ch-sub">B2B commercial awareness. The channel that unlocks the commercial funnel.</div><div class="ch-tags"><span class="ctag ctag-c">Commercial only</span></div></div>
+      <div class="ch-b">
+        <p class="ch-body">Facility managers don't spend meaningful time on Facebook. They're on LinkedIn — the only ad platform that allows targeting by job title, company size, and industry simultaneously. This means Fantail can reach "Facility Manager, Wellington, 50–500 employees" before they've even started searching. The commercial buying cycle is 2–8 weeks. LinkedIn plants Fantail's name during that research period so that when they do search "commercial HVAC Wellington," Fantail is already familiar. Without LinkedIn, the commercial funnel competes cold on Google alone. With it, you're already in the consideration set before the search begins.</p>
+        <div class="ch-pts">
+          <div class="ch-pt"><span>Job title targeting: Facility Manager, Property Manager, Building Manager, Operations Manager — Wellington region specifically</span></div>
+          <div class="ch-pt"><span>Company size: 50–500 employees — large enough to have dedicated facility management, small enough that no national incumbent is locked in</span></div>
+          <div class="ch-pt"><span>Content formats: case study posts, maintenance contract value props, compliance credential highlights, and direct lead gen form ads</span></div>
+          <div class="ch-pt"><span>Lead gen form ads — capture name, email, company, and phone without requiring a website visit, reducing the barrier to initial contact</span></div>
+        </div>
+      </div>
+      <div class="ch-c">
+        <div class="ch-stat"><div class="ch-sv">$1.5k–5k</div><div class="ch-sl">Average commercial HVAC contract value per month in the Wellington market</div></div>
+        <div class="ch-stat"><div class="ch-sv">Track 1+2</div><div class="ch-sl">Only available on Track 1+2 and Scale — the primary reason for the upgrade</div></div>
+      </div>
+    </div>
+  </div>
+</section></div>
+
+<hr>
+
+<!-- 05 ROI -->
+<div class="pg"><section id="roi">
+  <div class="eyebrow">05 — ROI Model</div>
+  <h2>Put Fantail's numbers in. See exactly when this pays for itself.</h2>
+  <p class="lead" style="margin-bottom:2.5rem">Drag the sliders to match what Fantail actually produces. The break-even arithmetic is straightforward — and it's lower than most people expect when they run it for the first time.</p>
+
+  <div class="card">
+    <div class="card-hd">
+      <span class="card-lbl">Interactive ROI calculator — Track 1+2 at $2,000/month retainer</span>
+      <span style="font-family:var(--f-mono);font-size:9px;color:var(--t3);letter-spacing:0.1em;text-transform:uppercase">Drag sliders to adjust</span>
+    </div>
+    <div class="roi-grid">
+      <div class="roi-l">
+        <div class="sg"><div class="sg-top"><span class="sg-name">Avg residential job value</span><span class="sg-val" id="v1">$4,000</span></div><input type="range" id="r1" min="1000" max="10000" step="250" value="4000" oninput="updateROI()"></div>
+        <div class="sg"><div class="sg-top"><span class="sg-name">Residential jobs per month (from ads)</span><span class="sg-val" id="v2">3 jobs</span></div><input type="range" id="r2" min="0" max="20" step="1" value="3" oninput="updateROI()"></div>
+        <div class="sg"><div class="sg-top"><span class="sg-name">Avg commercial contract value</span><span class="sg-val" id="v3">$2,500/mo</span></div><input type="range" id="r3" min="500" max="8000" step="250" value="2500" oninput="updateROI()"></div>
+        <div class="sg"><div class="sg-top"><span class="sg-name">Commercial contracts signed per quarter</span><span class="sg-val" id="v4">1 contract</span></div><input type="range" id="r4" min="0" max="5" step="1" value="1" oninput="updateROI()"></div>
+        <div class="sg"><div class="sg-top"><span class="sg-name">Monthly ad spend budget</span><span class="sg-val" id="v5">$1,300</span></div><input type="range" id="r5" min="800" max="3000" step="100" value="1300" oninput="updateROI()"></div>
+      </div>
+      <div class="roi-r">
+        <div class="roi-line"><span class="roi-ll">Monthly retainer</span><span class="roi-lv neg">−$2,000</span></div>
+        <div class="roi-line"><span class="roi-ll">Monthly ad spend</span><span class="roi-lv neg" id="o1">−$1,300</span></div>
+        <div class="roi-line"><span class="roi-ll">Residential revenue (monthly)</span><span class="roi-lv pos" id="o2">+$12,000</span></div>
+        <div class="roi-line"><span class="roi-ll">Commercial revenue (monthly, amortised)</span><span class="roi-lv pos" id="o3">+$833</span></div>
+        <div class="roi-line" style="padding-top:18px;margin-top:6px;border-top:1px solid var(--brl)"><span class="roi-ll" style="font-weight:600;color:var(--t1);font-size:16px">Monthly net return</span><span class="roi-lv big pos" id="o4">+$9,533</span></div>
+        <div id="roi-verd" class="roi-verd verd-ok">System returns <strong id="ov-m">4.5×</strong> for every dollar invested. Break-even is <strong id="ov-b">less than 1 job</strong> per month.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="insight"><strong>The commercial contract leverage point:</strong> One commercial maintenance contract at $2,500/month generates $30,000 in annual recurring revenue. The Track 1+2 retainer costs $24,000/year. A single commercial client covers the full retainer and produces a surplus. The LinkedIn and commercial Google campaign that makes this possible only exists in Track 1+2. The $700/month gap between Track 1 and Track 1+2 is recovered in the first month a commercial contract closes — after that it's pure leverage.</div>
+</section></div>
+
+<hr>
+
+<!-- 06 SUPPORTING -->
+<div class="pg"><section id="support">
+  <div class="eyebrow">06 — Supporting Strategies</div>
+  <h2>Four systems that amplify every paid dollar and build compounding value.</h2>
+  <p class="lead" style="margin-bottom:2.5rem">Paid campaigns are the engine. These four strategies are the multipliers — making every dollar of ad spend work harder and building organic value that compounds independently of ad spend over time.</p>
+
+  <div class="sup-grid">
+    <div class="sup">
+      <div class="sup-ico">◎</div>
+      <div class="sup-name">Google Business Profile</div>
+      <div class="sup-desc">The single highest-ROI free asset for any Wellington trade business. GBP appears in the Local Pack — the map results at the top of Google — and drives direct calls before a user ever reaches the website. A fully optimised GBP dramatically improves conversion from every paid campaign because it builds trust before the click.</div>
+      <div class="sup-list">
+        <div class="si"><span>Complete all service categories with specific HVAC terminology: heat pump installation, commercial HVAC, EV charger installation, ventilation systems</span></div>
+        <div class="si"><span>Add new photos weekly — real installs, team, before/afters. Google rewards active profiles with higher local pack rankings</span></div>
+        <div class="si"><span>Respond to every review within 24 hours — review responses are indexed by Google and read by every prospective customer evaluating Fantail</span></div>
+        <div class="si"><span>Post seasonal GBP updates ("Getting Wellington homes winter-ready") — these appear in search results and drive calls at zero cost</span></div>
+      </div>
+    </div>
+    <div class="sup">
+      <div class="sup-ico">◈</div>
+      <div class="sup-name">Review Generation System</div>
+      <div class="sup-desc">Reviews are the single most powerful trust signal for residential HVAC buyers. A homeowner comparing three providers almost always chooses the one with more, recent, specific reviews — even if competitors have better ads. A systematic post-job process turns every completed job into a trust asset that makes every future ad more effective.</div>
+      <div class="sup-list">
+        <div class="si"><span>Post-job SMS sequence: personalised Google review link sent 24 hours after completion — SMS review request conversion is significantly higher than email</span></div>
+        <div class="si"><span>Target: 4.7+ stars with 50+ reviews — this profile dominates the local pack and reduces CPL on all paid campaigns</span></div>
+        <div class="si"><span>Coaching on review content: ask customers to mention the specific service type, Wellington suburb, and team member — specific reviews rank for hyper-local keywords</span></div>
+        <div class="si"><span>Commercial track: request LinkedIn recommendations from facility managers — builds B2B credibility for the commercial funnel</span></div>
+      </div>
+    </div>
+    <div class="sup">
+      <div class="sup-ico">◆</div>
+      <div class="sup-name">SEO Foundation</div>
+      <div class="sup-desc">Paid ads produce instant results. SEO produces compounding results that grow every month and cost nothing per click once achieved. The foundation work is a one-time build that pays indefinitely — ranking organically for "heat pump install Wellington" eliminates cost-per-click on those searches permanently.</div>
+      <div class="sup-list">
+        <div class="si"><span>Dedicated service pages for each offering — each targeting a specific keyword cluster that paid campaigns also bid on, reinforcing each other</span></div>
+        <div class="si"><span>Local schema markup — structured data telling Google that Fantail is a Wellington HVAC business, its services, hours, and service area</span></div>
+        <div class="si"><span>Internal linking between service pages — topic authority builds over time and lifts all pages in the cluster, not just individually optimised ones</span></div>
+        <div class="si"><span>Seasonal content: "How to prepare your Wellington home for winter" — captures top-of-funnel homeowners before they reach purchase intent</span></div>
+      </div>
+    </div>
+    <div class="sup">
+      <div class="sup-ico">◇</div>
+      <div class="sup-name">Full Attribution Tracking</div>
+      <div class="sup-desc">You cannot optimise what you cannot measure. The tracking stack creates complete visibility from ad click to enquiry — which campaign, keyword, ad, and page. No campaign goes live before tracking is installed, verified, and confirmed working. Every monthly report is built on this data.</div>
+      <div class="sup-list">
+        <div class="si"><span>GA4 full setup: sessions, source/medium attribution, goal completions, landing page performance, user journey from ad to enquiry</span></div>
+        <div class="si"><span>Form submission tracking: every enquiry attributed to the exact ad, keyword, and campaign that drove it</span></div>
+        <div class="si"><span>Call tracking: phone calls attributed to the specific ad or page that generated them — critical for HVAC where calls convert at higher rates than forms</span></div>
+        <div class="si"><span>Monthly reporting: spend by channel, leads generated, CPL per channel, what's changing next month and the specific reasoning behind each change</span></div>
+      </div>
+    </div>
+  </div>
+</section></div>
+
+<hr>
+
+<!-- 07 TIMELINE -->
+<div class="pg"><section id="timeline">
+  <div class="eyebrow">07 — 90-Day Arc</div>
+  <h2>Month by month: what gets built, when it goes live, what to expect.</h2>
+  <p class="lead" style="margin-bottom:2.5rem">The first 90 days are a structured build — not a period of hoping. Each month has a specific objective and a clear deliverable. Wellington winter peaks in May–June: this timeline is built around capturing that window.</p>
+
+  <div class="card">
+    <div class="card-hd"><span class="card-lbl">90-day build arc — April → May → June 2026</span></div>
+    <div class="ninety">
+      <div class="mc">
+        <div class="mc-tag">Month 01 — April 2026</div>
+        <div class="mc-title">Build + Launch</div>
+        <div class="mc-tasks">
+          <div class="mt to">Week 1: Full audit of existing Google Ads, GBP, and website. GA4, form tracking, and call tracking installed and confirmed. Nothing spends until tracking is clean.</div>
+          <div class="mt to">Week 2: Residential Google Search live. Meta pre-season awareness live. LinkedIn B2B campaign live. Website rebuild begins in parallel.</div>
+          <div class="mt tb">Week 3: Commercial Google Search live. Retargeting audiences built from incoming traffic. First performance data reviewed.</div>
+          <div class="mt to">Week 4: New website live — residential and commercial pages separate. First negative keyword list built from real search term data. First attributed enquiries tracked.</div>
+        </div>
+        <div class="mc-out"><strong>Month 1 objective:</strong> All five channels live, all tracking clean, first attributed enquiries generating before Wellington's winter peak hits in May.</div>
+      </div>
+      <div class="mc">
+        <div class="mc-tag">Month 02 — May 2026</div>
+        <div class="mc-title">Optimise + Scale</div>
+        <div class="mc-tasks">
+          <div class="mt to">Google campaigns exit the learning phase — bidding switches from learning mode to target CPA. Budget shifted toward highest-converting keywords and ad groups.</div>
+          <div class="mt to">Meta creative refreshed with winter urgency messaging. Retargeting audience now large enough to activate properly. Lookalike audiences built from enquiry data.</div>
+          <div class="mt tb">Commercial pipeline review: first LinkedIn leads assessed. B2B Google search terms analysed. Commercial page refined based on real visitor data.</div>
+          <div class="mt tg">Month 1 full report delivered: channel-level CPL, attributed revenue, what's changing next month and specifically why. Review generation SMS process active.</div>
+        </div>
+        <div class="mc-out"><strong>Month 2 objective:</strong> System fully optimised during peak demand. Cost-per-enquiry falling. First commercial pipeline conversations started from LinkedIn.</div>
+      </div>
+      <div class="mc">
+        <div class="mc-tag">Month 03 — June 2026</div>
+        <div class="mc-title">Compound + Review</div>
+        <div class="mc-tasks">
+          <div class="mt to">Wellington winter peak — campaigns fully optimised. Seasonal budget uplift applied to highest-converting segments. Retargeting pool at maximum size and efficiency.</div>
+          <div class="mt tb">Commercial: first contract negotiations likely in progress from May LinkedIn outreach. Commercial page iterated on 60 days of real data.</div>
+          <div class="mt tg">SEO showing early organic impression growth. GBP review count building. Compound effect between Meta and Google visible in the CPL data.</div>
+          <div class="mt to">90-day strategy review: full performance analysis, Q3 strategy set. Scale decision — is the system ready to move toward the Scale track?</div>
+        </div>
+        <div class="mc-out"><strong>Month 3 objective:</strong> Peak demand fully captured across both funnels. Commercial pipeline active. 90-day review confirms ROI and sets Q3 direction.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="insight"><strong>The scale decision at 90 days:</strong> After three months there is real performance data across every channel — actual cost-per-lead, attributed revenue, and compound effect visible in the numbers. The question shifts from "does this work?" to "how fast do we want to grow?" The Scale track at $2,900/month adds weekly optimisation, quarterly content shoots, email automation, and a full seasonal campaign calendar. That's the right move after Track 1+2 is proven — not before.</div>
+</section></div>
+
+<hr>
+
+<!-- 08 TRACKS -->
+<div class="pg"><section id="tracks">
+  <div class="eyebrow">08 — Track Comparison</div>
+  <h2>Three tracks. One clear answer for where Fantail is right now.</h2>
+  <p class="lead" style="margin-bottom:2.5rem">The right track is determined by the objective, not just the budget. Track 1 is residential-only. Track 1+2 is the full dual-funnel system. Scale is what happens after Track 1+2 is proven.</p>
+
+  <div class="track-grid">
+    <div class="tc">
+      <div class="tc-tier">Track 1</div>
+      <div class="tc-price">$1,300</div>
+      <div class="tc-per">/month + $800–1,000 ad spend</div>
+      <div class="tc-list">
+        <div class="ti"><span class="ti-y">✓</span>Residential Google Search</div>
+        <div class="ti"><span class="ti-y">✓</span>Meta awareness + retargeting</div>
+        <div class="ti"><span class="ti-y">✓</span>1 residential landing page</div>
+        <div class="ti"><span class="ti-y">✓</span>GA4 + form + call tracking</div>
+        <div class="ti"><span class="ti-y">✓</span>Monthly reporting</div>
+        <div class="ti"><span class="ti-n">✗</span>Commercial funnel</div>
+        <div class="ti"><span class="ti-n">✗</span>LinkedIn ads</div>
+        <div class="ti"><span class="ti-n">✗</span>Website rebuild</div>
+        <div class="ti"><span class="ti-n">✗</span>B2B landing page</div>
+      </div>
+      <div class="tc-note tn-w">Leaves the commercial opportunity completely untouched. The $700/month gap is recovered by a single commercial contract in its first month.</div>
+    </div>
+    <div class="tc rec">
+      <div class="rec-pill">Recommended for Fantail</div>
+      <div class="tc-tier">Track 1+2</div>
+      <div class="tc-price">$2,000</div>
+      <div class="tc-per">/month + $1,100–1,500 ad spend</div>
+      <div class="tc-list">
+        <div class="ti"><span class="ti-y">✓</span>Everything in Track 1</div>
+        <div class="ti"><span class="ti-y">✓</span>Full website rebuild</div>
+        <div class="ti"><span class="ti-y">✓</span>Commercial Google Ads campaign</div>
+        <div class="ti"><span class="ti-y">✓</span>Dedicated B2B landing page</div>
+        <div class="ti"><span class="ti-y">✓</span>LinkedIn B2B campaign</div>
+        <div class="ti"><span class="ti-y">✓</span>B2B remarketing + nurture</div>
+        <div class="ti"><span class="ti-y">✓</span>Split CPL reporting per line</div>
+        <div class="ti"><span class="ti-y">✓</span>Bi-monthly strategy reviews</div>
+        <div class="ti"><span class="ti-n">✗</span>Weekly optimisation cadence</div>
+        <div class="ti"><span class="ti-n">✗</span>Email automation + calendar</div>
+      </div>
+      <div class="tc-note tn-g">The only track where both funnels run simultaneously and compound. One commercial contract at $2,000/month covers this retainer for 12+ months.</div>
+    </div>
+    <div class="tc">
+      <div class="tc-tier">Scale</div>
+      <div class="tc-price">$2,900</div>
+      <div class="tc-per">/month + $1,500–2,300 ad spend</div>
+      <div class="tc-list">
+        <div class="ti"><span class="ti-y">✓</span>Everything in Track 1+2</div>
+        <div class="ti"><span class="ti-y">✓</span>Weekly optimisation cadence</div>
+        <div class="ti"><span class="ti-y">✓</span>Creative testing programme</div>
+        <div class="ti"><span class="ti-y">✓</span>Competitor share-of-voice tracking</div>
+        <div class="ti"><span class="ti-y">✓</span>Monthly 60-min strategy call</div>
+        <div class="ti"><span class="ti-y">✓</span>Quarterly on-site content shoot</div>
+        <div class="ti"><span class="ti-y">✓</span>Email marketing + automation</div>
+        <div class="ti"><span class="ti-y">✓</span>Full seasonal campaign calendar</div>
+      </div>
+      <div class="tc-note tn-l">The right move after Track 1+2 is proven — likely at the 90-day review. Built for owning Wellington HVAC market share, not proving the model.</div>
+    </div>
+  </div>
+</section></div>
+
+<hr>
+
+<!-- 09 SCALING -->
+<div class="pg"><section id="scaling">
+  <div class="eyebrow">09 — Scaling Roadmap</div>
+  <h2>What months 4–12 look like. Three paths based on what the data shows.</h2>
+  <p class="lead" style="margin-bottom:2.5rem">After 90 days there's real performance data. The direction Fantail scales depends on which part of the system is generating the best return. Each path is a data-driven response to a specific scenario — not a generic upsell.</p>
+
+  <!-- Growth Chart -->
+  <div class="card">
+    <div class="card-hd">
+      <span class="card-lbl">12-month lead volume projection — Track 1+2 compounding</span>
+      <span style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap">
+        <span style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--t3)"><span style="width:24px;height:2px;background:var(--or);border-radius:2px;display:inline-block"></span>Residential leads</span>
+        <span style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--t3)"><span style="width:24px;height:2px;background:var(--bl);border-radius:2px;display:inline-block;opacity:0.7"></span>Commercial leads</span>
+      </span>
+    </div>
+    <div style="padding:1.75rem"><canvas id="gc" height="200"></canvas></div>
+  </div>
+
+  <div class="paths">
+    <div class="path">
+      <div class="pa"><div class="p-tag">Path A — Months 4–6</div><div class="p-name">Residential Domination</div><div class="p-trig">Triggered when: residential CPL is low and volume is high, but commercial pipeline is slow to close.</div><span class="ppill" style="background:var(--ord);border:1px solid var(--orb);color:var(--or)">Scale residential budget</span></div>
+      <div class="pb">
+        <p class="p-body">If residential Google campaigns are producing enquiries at under $80 CPL and the pipeline is healthy, the move is to scale ad spend — not diversify prematurely. Increase Google Search budgets toward highest-converting keywords, expand Meta spend to reach broader audiences, and open new service verticals.</p>
+        <div class="ch-pts">
+          <div class="ch-pt"><span>Suburb-specific ad groups: "Heat pump install Karori," "heat pump Johnsonville" — these convert higher because the ad matches the exact search</span></div>
+          <div class="ch-pt"><span>EV charger campaign expansion — growing, underserved Wellington category with low competitor spend and high avg job value ($1,500–3,000)</span></div>
+          <div class="ch-pt"><span>Heat pump servicing campaign — separate from installs, captures existing homeowners, builds a recurring service revenue stream year-round</span></div>
+          <div class="ch-pt"><span>Email capture on residential page — builds a warm list for next season's pre-winter campaign, reducing paid spend dependency year-on-year</span></div>
+        </div>
+      </div>
+      <div class="pc">
+        <div class="ch-stat"><div class="ch-sv">$80–120</div><div class="ch-sl">Target residential CPL at scale — Wellington HVAC industry benchmark</div></div>
+        <div class="ch-stat"><div class="ch-sv">$1.5–3k</div><div class="ch-sl">EV charger avg job value — high margin, low competition in Wellington</div></div>
+      </div>
+    </div>
+    <div class="path alt">
+      <div class="pa"><div class="p-tag">Path B — Months 4–6</div><div class="p-name">Commercial Acceleration</div><div class="p-trig">Triggered when: first commercial contract closes and LinkedIn is generating consistent B2B leads.</div><span class="ppill" style="background:var(--bld);border:1px solid var(--blb);color:var(--bl)">Scale B2B budget</span></div>
+      <div class="pb">
+        <p class="p-body">One commercial contract closing changes the economics completely. A $2,500/month contract generates $30,000/year from a single client. When LinkedIn is producing these leads, expand the B2B targeting and build the commercial pipeline infrastructure — case studies, nurture sequences, proposal templates — so Fantail closes B2B leads systematically.</p>
+        <div class="ch-pts">
+          <div class="ch-pt"><span>LinkedIn budget increase to $600–800/month — expand targeting to Property Developers, Building Owners, Hospitality Operations Managers with HVAC procurement authority</span></div>
+          <div class="ch-pt"><span>Commercial case study content — photograph and document the first commercial job in detail. One strong case study closes more B2B leads than ad spend alone</span></div>
+          <div class="ch-pt"><span>B2B email nurture sequence — 4-email automated sequence for leads who don't convert immediately. Commercial buyers take weeks; nurture keeps Fantail present throughout</span></div>
+          <div class="ch-pt"><span>Tender positioning — building a credentials document now positions Fantail to compete for council and government HVAC contracts within 12–18 months</span></div>
+        </div>
+      </div>
+      <div class="pc">
+        <div class="ch-stat"><div class="ch-sv">$30,000</div><div class="ch-sl">Annual recurring revenue from a single $2,500/month commercial contract</div></div>
+        <div class="ch-stat"><div class="ch-sv">3–5 contracts</div><div class="ch-sl">Target commercial portfolio at 12 months — covers retainer and generates significant net revenue</div></div>
+      </div>
+    </div>
+    <div class="path">
+      <div class="pa"><div class="p-tag">Path C — Months 4–12</div><div class="p-name">Full Market Ownership</div><div class="p-trig">Triggered when: both funnels are producing and Fantail is ready to lock in Wellington HVAC market share.</div><span class="ppill" style="background:var(--grd);border:1px solid var(--grb);color:var(--gr)">Scale everything</span></div>
+      <div class="pb">
+        <p class="p-body">When both funnels are proven and compounding, the window opens to aggressively take Wellington HVAC market share before competitors adapt. Add channels that create long-term defensibility — organic content that ranks permanently, a brand that reduces paid CAC over time, and a referral ecosystem that generates leads entirely outside of ad spend.</p>
+        <div class="ch-pts">
+          <div class="ch-pt"><span>Quarterly on-site content shoots — real Wellington jobs filmed and photographed, turned into Meta creative, YouTube pre-rolls, GBP posts, and case studies simultaneously</span></div>
+          <div class="ch-pt"><span>YouTube pre-roll targeting Wellington homeowner interests — lower CPM than Meta, builds brand recognition that compounds across all other channels</span></div>
+          <div class="ch-pt"><span>Referral programme — post-job SMS includes a referral incentive ($100 off next service). Systematises word-of-mouth, which is already HVAC's strongest lead source</span></div>
+          <div class="ch-pt"><span>Competitor conquest campaigns — Google Search ads targeting competitors' brand keywords capture homeowners who searched a competitor but haven't yet committed</span></div>
+        </div>
+      </div>
+      <div class="pc">
+        <div class="ch-stat"><div class="ch-sv">Year 2+</div><div class="ch-sl">SEO + email list + referral reduce paid CAC year-on-year as organic compounds</div></div>
+        <div class="ch-stat"><div class="ch-sv">Defensible</div><div class="ch-sl">Strong GBP, domain authority, and brand recognition are expensive for competitors to displace</div></div>
+      </div>
+    </div>
+  </div>
+</section></div>
+
+<hr>
+
+<!-- 10 SCENARIOS -->
+<div class="pg"><section id="scenarios">
+  <div class="eyebrow">10 — Alternative Strategies</div>
+  <h2>What to do when specific parts of the system underperform.</h2>
+  <p class="lead" style="margin-bottom:2.5rem">No campaign runs perfectly from day one. The difference between an agency that generates results and one that burns budget is knowing the right response for each failure mode. These are the specific tactical responses for Fantail's most likely scenarios.</p>
+
+  <div class="scens">
+    <div class="scen"><div class="scen-g">
+      <div class="sc-l"><div class="sc-num">Scenario 01</div><div class="sc-title">Google clicks not converting to enquiries</div><div class="sc-trig">Traffic is arriving. Forms are not being filled. CPL is too high relative to click volume.</div><span class="scpill" style="background:rgba(224,82,82,0.1);border:1px solid rgba(224,82,82,0.25);color:#e88888">Conversion problem — not a traffic problem</span></div>
+      <div class="sc-r">
+        <p class="sc-body">The instinct is to adjust the Google ads. The real problem is almost always the landing page — CTA not clear enough, price context missing, or the page loads too slowly on mobile. Before touching ad spend, diagnose the page.</p>
+        <div class="sc-cols">
+          <div class="scbox"><div class="scbox-t">Response</div><p>Check page load speed first (target 90+ mobile score on Google PageSpeed Insights). Then check: is there a visible phone number and form above the fold? Add price context ("from $X installed"). Install Hotjar heatmaps to see exactly where users drop off. Usually one of these three things resolves it within 2 weeks.</p></div>
+          <div class="scbox"><div class="scbox-t">Alternative tactic</div><p>Add a click-to-call extension directly in the Google ad — HVAC buyers often prefer calling over filling in a form. A prominent phone number in the ad itself (not just the landing page) can double enquiry rate without touching the page or the keyword list.</p></div>
+        </div>
+      </div>
+    </div></div>
+
+    <div class="scen"><div class="scen-g">
+      <div class="sc-l"><div class="sc-num">Scenario 02</div><div class="sc-title">Meta ads generating clicks but no form submissions</div><div class="sc-trig">High Meta CTR, reasonable spend, but clicks are not turning into enquiries on the page.</div><span class="scpill" style="background:rgba(212,150,15,0.1);border:1px solid rgba(212,150,15,0.2);color:#c4a040">Audience or funnel stage mismatch</span></div>
+      <div class="sc-r">
+        <p class="sc-body">Meta is a pre-intent channel — it creates awareness, not immediate conversions. If it's measured on the same CPL benchmark as Google, it will always look underperforming. The right response is to adjust the funnel, not the budget.</p>
+        <div class="sc-cols">
+          <div class="scbox"><div class="scbox-t">Response</div><p>Switch the Meta objective from website traffic to lead generation forms — capture name and phone directly in the ad without requiring a website visit. HVAC buyers on Meta are in early research; a low-friction "get a free quote" form converts this audience significantly better than directing them to a page.</p></div>
+          <div class="scbox"><div class="scbox-t">Alternative tactic</div><p>Run a "heat pump health check" offer — free 30-minute inspection for existing owners — rather than a direct install pitch. This removes price friction entirely. Book the inspection, build trust in person during the visit, then upsell the new installation. Lower CPL on Meta, higher close rate because of in-person trust.</p></div>
+        </div>
+      </div>
+    </div></div>
+
+    <div class="scen"><div class="scen-g">
+      <div class="sc-l"><div class="sc-num">Scenario 03</div><div class="sc-title">LinkedIn generating impressions but no B2B leads</div><div class="sc-trig">Ads are running, facility managers are seeing them, but no enquiries after 6–8 weeks.</div><span class="scpill" style="background:var(--bld);border:1px solid var(--blb);color:var(--bl)">Offer or targeting mismatch</span></div>
+      <div class="sc-r">
+        <p class="sc-body">B2B LinkedIn cycles are long — 6–8 weeks of zero direct enquiries is normal and expected. But if there are zero engagement signals at all (no profile visits, no link clicks, no form opens), that points to a targeting or creative problem, not just a timing problem.</p>
+        <div class="sc-cols">
+          <div class="scbox"><div class="scbox-t">Response</div><p>Broaden targeting to include company follower targeting in property management, hospitality, retail, and healthcare — industries with large HVAC needs in Wellington. Switch creative to a specific, concrete offer: "Commercial HVAC maintenance contracts — guaranteed 4-hour response SLA for Wellington businesses." Specificity drives B2B response.</p></div>
+          <div class="scbox"><div class="scbox-t">Alternative tactic</div><p>Direct LinkedIn outreach — manually connect with facility managers at Wellington companies, send a personalised message referencing a specific pain point for their industry. Organic LinkedIn outreach is slower but zero-cost and produces warmer leads than cold ad impressions in the early months.</p></div>
+        </div>
+      </div>
+    </div></div>
+
+    <div class="scen"><div class="scen-g">
+      <div class="sc-l"><div class="sc-num">Scenario 04</div><div class="sc-title">Enquiries arriving but not converting to booked jobs</div><div class="sc-trig">Marketing is working — leads are coming in — but close rate from enquiry to booked job is low.</div><span class="scpill" style="background:var(--grd);border:1px solid var(--grb);color:#5ecf98">Sales process — not a marketing problem</span></div>
+      <div class="sc-r">
+        <p class="sc-body">This is the most important scenario to diagnose correctly. Common causes: response time over 2 hours (HVAC buyers shop multiple providers simultaneously and go with whoever responds first), quote turnaround too slow, or price presentation that doesn't justify the value.</p>
+        <div class="sc-cols">
+          <div class="scbox"><div class="scbox-t">Response</div><p>Track response time to every enquiry — if it's over 2 hours, close rate will be low regardless of lead quality. Set up an auto-responder on the enquiry form confirming receipt and setting a clear expectation ("We'll call you within 2 hours"). This alone often lifts close rate significantly because it removes uncertainty before the first call.</p></div>
+          <div class="scbox"><div class="scbox-t">Marketing assist</div><p>Add retargeting for enquiry form abandoners — people who started filling out the form but didn't submit. Follow them with a "Get a free in-home quote — no obligation" Meta ad for 14 days. Separately, a post-enquiry email sends case studies and reviews to warm prospects who are still comparing providers.</p></div>
+        </div>
+      </div>
+    </div></div>
+
+    <div class="scen"><div class="scen-g">
+      <div class="sc-l"><div class="sc-num">Scenario 05</div><div class="sc-title">Competitor increases spend and Google CPC rises sharply</div><div class="sc-trig">A Wellington competitor increases their budget — CPC rises, Fantail's ad position drops, CPL increases.</div><span class="scpill" style="background:rgba(212,150,15,0.1);border:1px solid rgba(212,150,15,0.2);color:#c4a040">Competitive pressure — requires diversification</span></div>
+      <div class="sc-r">
+        <p class="sc-body">This is why organic and supporting channels matter. A business entirely dependent on paid search is vulnerable to competitor budget increases. The GBP reviews, SEO rankings, email list, and referral programme built through the system provide channels that a competitor's ad spend cannot directly affect.</p>
+        <div class="sc-cols">
+          <div class="scbox"><div class="scbox-t">Immediate response</div><p>Shift budget toward long-tail and service-specific keywords competitors are less likely to target — "Mitsubishi heat pump installer Wellington," "Daikin heat pump install Karori," "heat pump install Wellington villa." These convert higher and face less competition than broad terms where the bidding war is happening.</p></div>
+          <div class="scbox"><div class="scbox-t">Long-term defence</div><p>GBP review count and organic SEO rankings cannot be bought. A Fantail profile with 80+ five-star reviews and a service page ranking organically for "heat pump install Wellington" costs a competitor months and significant budget to approach — these assets are built through the system and compound over time.</p></div>
+        </div>
+      </div>
+    </div></div>
+  </div>
+
+  <div class="insight"><strong>The core principle across all of these:</strong> Every underperformance scenario has a specific diagnosis and a specific fix. The monthly reporting built into Track 1+2 exists precisely to identify which scenario is active and respond with the right lever — not a generalised budget increase or a pivot to an entirely new channel. This is what separates managed campaigns from set-and-forget advertising.</div>
+</section></div>
+
+<hr>
+
+<!-- CLOSE -->
+<div class="close-wrap" id="close">
+  <div class="close-inner">
+    <div>
+      <h3>Three things to confirm.<br>Then the system builds.</h3>
+      <p class="close-body">The strategy is complete. The system architecture is ready. A draft Fantail site separating residential and commercial paths already exists and can be reviewed on a call or in a screen recording.<br><br>Wellington winter peaks in May and June. Campaigns launched in April are optimised before the peak. Campaigns launched in May are still learning — burning budget while competitors who started earlier capture the best enquiries at lower cost.<br><br>The window is real. It narrows in the next few weeks.</p>
+      <div class="contact">
+        <div class="contact-name">Logan James Hempel — Founder, Empora Media</div>
+        <div class="contact-info">logan@emporom.org<br>+64 29 123 6538</div>
+      </div>
+    </div>
+    <div>
+      <div class="nsteps">
+        <div class="ns"><div class="ns-num">01</div><div><div class="ns-title">Confirm service priority</div><div class="ns-detail">Residential-first, commercial-first, or both simultaneously. Determines campaign build order and budget allocation from day one.</div></div></div>
+        <div class="ns"><div class="ns-num">02</div><div><div class="ns-title">Grant access to existing accounts</div><div class="ns-detail">Google Ads, Google Analytics, Meta Business Manager, Google Business Profile. Audit happens before any spend is committed.</div></div></div>
+        <div class="ns"><div class="ns-num">03</div><div><div class="ns-title">Set campaign go-live date</div><div class="ns-detail">Tracking installed and confirmed before anything goes live. Realistic time from agreement to campaigns live: 7–10 days.</div></div></div>
+        <div class="ns"><div class="ns-num">04</div><div><div class="ns-title">Review the draft Fantail site</div><div class="ns-detail">Proof-of-concept with separate residential and commercial paths already built — review by screen recording or on a live call.</div></div></div>
+        <div class="ns"><div class="ns-num">05</div><div><div class="ns-title">Confirm Track 1+2 and start</div><div class="ns-detail">Full campaign architecture ready within 48 hours of agreement. System live before Wellington winter peaks in May.</div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="foot">
+  <span>Empora Media × Fantail Services — April 2026</span>
+  <span>Confidential — prepared for Chris Spayes</span>
+</div>
+
+<script>
+// ── ROI CALCULATOR ──
+function nzd(n){return'$'+Math.round(n).toLocaleString('en-NZ')}
+
+function updateROI(){
+  var r1=parseInt(document.getElementById('r1').value);
+  var r2=parseInt(document.getElementById('r2').value);
+  var r3=parseInt(document.getElementById('r3').value);
+  var r4=parseInt(document.getElementById('r4').value);
+  var r5=parseInt(document.getElementById('r5').value);
+
+  document.getElementById('v1').textContent=nzd(r1);
+  document.getElementById('v2').textContent=r2+(r2===1?' job':' jobs');
+  document.getElementById('v3').textContent=nzd(r3)+'/mo';
+  document.getElementById('v4').textContent=r4+(r4===1?' contract':' contracts');
+  document.getElementById('v5').textContent=nzd(r5);
+
+  var retainer=2000;
+  var resRev=r1*r2;
+  var comRevMo=Math.round((r3*r4)/3);
+  var totalOut=retainer+r5;
+  var totalIn=resRev+comRevMo;
+  var net=totalIn-totalOut;
+  var multiple=totalOut>0?(totalIn/totalOut):0;
+  var be=r1>0?Math.ceil(totalOut/r1):0;
+
+  document.getElementById('o1').textContent='−'+nzd(r5);
+  document.getElementById('o2').textContent='+'+nzd(resRev);
+  document.getElementById('o3').textContent='+'+nzd(comRevMo);
+
+  var o4=document.getElementById('o4');
+  o4.textContent=(net>=0?'+':'')+nzd(net);
+  o4.className='roi-lv big '+(net>=0?'pos':'neg');
+
+  var vd=document.getElementById('roi-verd');
+  vd.className='roi-verd '+(net>=0?'verd-ok':'verd-bad');
+  vd.innerHTML=net>=0
+    ?'System returns <strong>'+multiple.toFixed(1)+'×</strong> for every dollar invested. Break-even is <strong>'+be+' residential job'+(be!==1?'s':'')+'</strong> per month.'
+    :'At these numbers the system runs at a loss. Break-even requires <strong>'+be+' residential job'+(be!==1?'s':'')+'</strong> per month — adjust job values to match Fantail\'s actual averages.';
+}
+
+// Run immediately — sliders already have oninput="updateROI()" inline
+// This just sets the initial display values correctly on page load
+document.addEventListener('DOMContentLoaded', function(){ updateROI(); });
+// Fallback if DOMContentLoaded already fired (script at bottom of body)
+if(document.readyState!=='loading'){ updateROI(); }
+
+// ── GROWTH CHART ──
+window.addEventListener('load',function(){
+  var canvas=document.getElementById('gc');
+  if(!canvas)return;
+  var dpr=window.devicePixelRatio||1;
+  var w=canvas.parentElement.clientWidth;
+  var h=200;
+  canvas.width=w*dpr;
+  canvas.height=h*dpr;
+  canvas.style.width=w+'px';
+  canvas.style.height=h+'px';
+  var ctx=canvas.getContext('2d');
+  ctx.scale(dpr,dpr);
+
+  var months=['Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Mar'];
+  var res=[2,6,9,7,5,4,3,3,4,5,6,8];
+  var com=[0,0,1,1,2,2,3,3,4,4,5,6];
+  var maxV=10;
+  var pL=44,pR=16,pT=24,pB=40;
+  var cW=w-pL-pR;
+  var cH=h-pT-pB;
+  var n=months.length;
+  var sx=cW/(n-1);
+
+  // Grid
+  [0,0.25,0.5,0.75,1].forEach(function(f){
+    var y=pT+cH*(1-f);
+    ctx.beginPath();
+    ctx.strokeStyle='rgba(255,255,255,0.05)';
+    ctx.lineWidth=1;
+    ctx.moveTo(pL,y);ctx.lineTo(pL+cW,y);ctx.stroke();
+    ctx.fillStyle='rgba(255,255,255,0.22)';
+    ctx.font='10px JetBrains Mono,monospace';
+    ctx.textAlign='right';
+    ctx.fillText(Math.round(f*maxV),pL-8,y+4);
+  });
+
+  function pts(data){
+    return data.map(function(v,i){
+      return{x:pL+i*sx,y:pT+cH*(1-v/maxV)};
+    });
+  }
+
+  function area(pts,color){
+    ctx.beginPath();
+    ctx.moveTo(pts[0].x,pT+cH);
+    pts.forEach(function(p){ctx.lineTo(p.x,p.y);});
+    ctx.lineTo(pts[pts.length-1].x,pT+cH);
+    ctx.closePath();
+    ctx.fillStyle=color;ctx.fill();
+  }
+
+  function line(pts,color,dash){
+    ctx.beginPath();
+    ctx.setLineDash(dash||[]);
+    ctx.strokeStyle=color;
+    ctx.lineWidth=2;
+    ctx.lineJoin='round';
+    pts.forEach(function(p,i){i===0?ctx.moveTo(p.x,p.y):ctx.lineTo(p.x,p.y);});
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
+
+  function dots(pts,color){
+    pts.forEach(function(p){
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,3.5,0,Math.PI*2);
+      ctx.fillStyle=color;ctx.fill();
+    });
+  }
+
+  var rPts=pts(res);var cPts=pts(com);
+  area(rPts,'rgba(232,98,47,0.08)');
+  area(cPts,'rgba(74,143,232,0.06)');
+  line(rPts,'rgba(232,98,47,0.9)');
+  line(cPts,'rgba(74,143,232,0.7)',[6,4]);
+  dots(rPts,'#E8622F');
+  dots(cPts,'#4A8FE8');
+
+  // Winter peak annotation
+  var px1=pL+1*sx,px2=pL+2*sx;
+  ctx.strokeStyle='rgba(232,98,47,0.3)';ctx.lineWidth=1;
+  ctx.setLineDash([3,3]);
+  ctx.beginPath();ctx.moveTo(px1,pT+6);ctx.lineTo(px2,pT+6);ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.fillStyle='rgba(232,98,47,0.45)';
+  ctx.font='9px JetBrains Mono,monospace';ctx.textAlign='center';
+  ctx.fillText('WINTER PEAK',(px1+px2)/2,pT-2);
+
+  // X labels
+  ctx.fillStyle='rgba(255,255,255,0.22)';
+  ctx.font='9px JetBrains Mono,monospace';ctx.textAlign='center';
+  months.forEach(function(m,i){ctx.fillText(m,pL+i*sx,pT+cH+22);});
+
+  // Y axis label
+  ctx.save();
+  ctx.fillStyle='rgba(255,255,255,0.2)';ctx.font='9px JetBrains Mono,monospace';ctx.textAlign='center';
+  ctx.translate(12,pT+cH/2);ctx.rotate(-Math.PI/2);
+  ctx.fillText('Leads/month',0,0);ctx.restore();
+});
+</script>
+</body>
+</html>
